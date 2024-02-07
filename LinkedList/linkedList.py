@@ -33,7 +33,7 @@ class LinkedList():
         self.tail = self.head
         self.length = 1
 
-    def append(self, value):
+    def append(self, value): # O(1)
         """
         Appends a new node with the given value to the end of the linked list.
 
@@ -46,7 +46,7 @@ class LinkedList():
         self.tail = newNode
         self.length += 1
 
-    def prepend(self, value):
+    def prepend(self, value): # O(1)
         """
         Prepends a new node with the given value to the beginning of the linked list.
 
@@ -59,7 +59,7 @@ class LinkedList():
         self.head = newNode
         self.length += 1
 
-    def insert(self, index: int, value):
+    def insert(self, index: int, value): # O(n)
         """
         Inserts a new node with the given value at the specified index in the linked list.
 
@@ -79,7 +79,7 @@ class LinkedList():
             newNode.next = nodeAfterInsert
         self.length += 1
 
-    def lookUp(self, index: int):
+    def lookUp(self, index: int): # O(n)
         """
         Returns the node at the specified index in the linked list.
 
@@ -97,7 +97,7 @@ class LinkedList():
             counter += 1
         return currentNode
     
-    def remove(self, index: int):
+    def remove(self, index: int): # O(n)
         """
         Removes the node at the specified index from the linked list.
 
@@ -117,7 +117,7 @@ class LinkedList():
             nodeBeforeTarget.next = targetNode.next
         self.length -= 1
 
-    def printList(self):
+    def printList(self): # O(n)
         """
         Prints the values of all nodes in the linked list.
         """
