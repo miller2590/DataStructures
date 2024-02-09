@@ -122,7 +122,7 @@ class LinkedList():
         self.length -= 1
 
 
-    def reverse(self):
+    def reverse(self): # O(n)
         """
         Reverses the linked list in-place.
 
