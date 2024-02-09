@@ -121,6 +121,30 @@ class LinkedList():
             nodeBeforeTarget.next = targetNode.next
         self.length -= 1
 
+
+    def reverse(self):
+        """
+        Reverses the linked list in-place.
+
+        Returns:
+            The reversed linked list.
+        """
+        if not self.head.next:
+            return self
+        
+        first = self.head
+        self.tail = self.head
+        second = first.next
+
+        while second:
+            temp = second.next
+            second.next = first
+            first = second
+            second = temp
+        self.head.next = None
+        self.head = first
+        return self
+        
     def printList(self): # O(n)
         """
         Prints the values of all nodes in the linked list.
@@ -140,5 +164,10 @@ myList.insert(2, 5)
 myList.printList()
 myList.remove(2)
 myList.printList()
+myList.insert(2, 55)
+myList.printList()
+myList.reverse()
+myList.printList()
+
 
 print(f'Length of Linked List is: {myList.length}')
