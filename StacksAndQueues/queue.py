@@ -53,9 +53,6 @@ class Queue():
         if self.isEmpty():
             self.first = newNode
             self.last = newNode
-        elif self.first == self.last:
-            self.last = newNode
-            self.first.next = newNode
         else:
             self.last.next = newNode
             self.last = newNode
@@ -78,7 +75,6 @@ class Queue():
         if self.first == self.last:
             self.first = None
             self.last = None
-            return dequeueNode.value
         else:
             self.first = dequeueNode.next
 
