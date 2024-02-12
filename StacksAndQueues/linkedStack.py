@@ -27,7 +27,7 @@ class Stack():
         self.bottom = None
         self.length = 0
 
-    def peek(self):
+    def peek(self): # O(1)
         """
         Returns the value of the top element in the stack without removing it.
 
@@ -39,7 +39,7 @@ class Stack():
         else:
             return self.top.value
 
-    def push(self, value):
+    def push(self, value): # O(1)
         """
         Adds a new element to the top of the stack.
 
@@ -60,7 +60,7 @@ class Stack():
         self.length += 1
         return self
             
-    def pop(self):
+    def pop(self): # O(1)
         """
         Removes and returns the top element from the stack.
 
@@ -80,7 +80,7 @@ class Stack():
         return poppedNode.value
 
 
-    def isEmpty(self):
+    def isEmpty(self): # O(1)
         """
         Checks if the stack is empty.
 
@@ -92,7 +92,7 @@ class Stack():
         else:
             return False
     
-    def showStack(self):
+    def showStack(self): # O(n)
         """
         Prints the elements of the stack.
         """

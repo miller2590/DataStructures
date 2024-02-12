@@ -10,7 +10,7 @@ class listStack():
         """
         self.array = []
 
-    def peek(self):
+    def peek(self): # O(1)
         """
         Returns the top element of the stack without removing it.
         If the stack is empty, returns None.
@@ -19,7 +19,7 @@ class listStack():
             return None
         return self.array[len(self.array) - 1]
 
-    def push(self, value):
+    def push(self, value): # O(1)
         """
         Adds an element to the top of the stack.
         Returns the updated stack.
@@ -27,7 +27,7 @@ class listStack():
         self.array.append(value)
         return self
             
-    def pop(self):
+    def pop(self): # O(1)
         """
         Removes and returns the top element of the stack.
         If the stack is empty, returns None.
@@ -36,7 +36,7 @@ class listStack():
             return None
         return self.array.pop()
         
-    def isEmpty(self):
+    def isEmpty(self): # O(1)
         """
         Checks if the stack is empty.
         Returns True if the stack is empty, False otherwise.
@@ -46,7 +46,7 @@ class listStack():
         else:
             return False
     
-    def showStack(self):
+    def showStack(self): # O(n)
         """
         Prints the elements of the stack.
         """

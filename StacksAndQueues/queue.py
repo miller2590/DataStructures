@@ -27,7 +27,7 @@ class Queue():
         self.last = None
         self.length = 0
 
-    def peek(self):
+    def peek(self): # O(1)
         """
         Returns the value of the first element in the queue without removing it.
 
@@ -38,7 +38,7 @@ class Queue():
             return None
         return self.first.value
 
-    def enqueue(self, value):
+    def enqueue(self, value): # O(1)
         """
         Adds an element to the end of the queue.
 
@@ -60,7 +60,7 @@ class Queue():
         self.length += 1
         return self
 
-    def dequeue(self):
+    def dequeue(self): # O(1)
         """
         Removes and returns the first element in the queue.
 
@@ -81,7 +81,7 @@ class Queue():
         self.length -= 1
         return dequeueNode.value
 
-    def isEmpty(self):
+    def isEmpty(self): # O(1)
         """
         Checks if the queue is empty.
 
@@ -93,7 +93,7 @@ class Queue():
         else:
             return False
 
-    def showQueue(self):
+    def showQueue(self): # O(n)
         """
         Prints the elements in the queue.
         """
