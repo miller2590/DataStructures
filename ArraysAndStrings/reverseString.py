@@ -6,4 +6,4 @@ def reverseString(string):
         newString += string[i]
     print(newString)
 
-reverseString(testString) # Time and Space O(n)
+reverseString(testString) # O(n)

@@ -22,5 +22,5 @@ def mergeSortedArrays(arr1, arr2):
 
     print(mergedArray)
 
-mergeSortedArrays(array_1, array_2) # Time and Space is O(n)
+mergeSortedArrays(array_1, array_2) # O(n)
 
