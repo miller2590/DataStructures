@@ -45,6 +45,7 @@ class BinarySearchTree():
         return False
 
     def remove(self, value):
+        # **MAGIC**
         pass
 
     def printTree(self, node, level=0):
