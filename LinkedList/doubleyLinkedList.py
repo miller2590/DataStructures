@@ -35,7 +35,7 @@ class DoublyLinkedList():
         self.tail = self.head
         self.length = 1
 
-    def append(self, value):
+    def append(self, value): 
         """
         Appends a new node with the given value to the end of the list.
 
