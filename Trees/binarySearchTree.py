@@ -25,7 +25,7 @@ class BinarySearchTree():
         """
         self.root = None
 
-    def insert(self, value):
+    def insert(self, value): # O(log N)
         """
         Inserts a new value into the binary search tree.
 
@@ -52,7 +52,7 @@ class BinarySearchTree():
                     else:
                         currentNode = currentNode.right
 
-    def lookup(self, value):
+    def lookup(self, value): # O(log N)
         """
         Searches for a value in the binary search tree.
 
@@ -76,7 +76,7 @@ class BinarySearchTree():
                 return True
         return False
   
-    def remove(self, value):
+    def remove(self, value): # O(log N)
         """
         Removes a value from the binary search tree.
 
@@ -152,7 +152,7 @@ class BinarySearchTree():
 
         return False
         
-    def printTree(self, node, level=0):
+    def printTree(self, node, level=0): # O(N)
         """
         Prints the binary search tree in an in-order traversal.
 
