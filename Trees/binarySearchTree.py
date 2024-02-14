@@ -1,14 +1,37 @@
 class Node():
+    """
+    Represents a node in a binary search tree.
+    """
+
     def __init__(self, value) -> None:
+        """
+        Initializes a new instance of the Node class.
+
+        Args:
+            value: The value to be stored in the node.
+        """
         self.left = None
         self.right = None
         self.value = value
 
 class BinarySearchTree():
+    """
+    Represents a binary search tree.
+    """
+
     def __init__(self) -> None:
+        """
+        Initializes a new instance of the BinarySearchTree class.
+        """
         self.root = None
 
     def insert(self, value):
+        """
+        Inserts a new value into the binary search tree.
+
+        Args:
+            value: The value to be inserted.
+        """
         newNode = Node(value)
 
         if self.root is None:
@@ -30,6 +53,15 @@ class BinarySearchTree():
                         currentNode = currentNode.right
 
     def lookup(self, value):
+        """
+        Searches for a value in the binary search tree.
+
+        Args:
+            value: The value to be searched.
+
+        Returns:
+            True if the value is found, False otherwise.
+        """
         if self.root is None:
             return False
         
@@ -43,9 +75,17 @@ class BinarySearchTree():
             else:
                 return True
         return False
-
   
     def remove(self, value):
+        """
+        Removes a value from the binary search tree.
+
+        Args:
+            value: The value to be removed.
+
+        Returns:
+            True if the value is successfully removed, False otherwise.
+        """
         if self.root is None:
             return False
 
@@ -112,8 +152,14 @@ class BinarySearchTree():
 
         return False
         
-
     def printTree(self, node, level=0):
+        """
+        Prints the binary search tree in an in-order traversal.
+
+        Args:
+            node: The root node of the tree.
+            level: The current level of the node (used for indentation).
+        """
         if node is None:
             return
 
