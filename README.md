@@ -24,7 +24,11 @@ The repository is divided into several folders, each focusing on a specific topi
   - [queue.py](StacksAndQueues/queue.py): A script demonstrating a queue implementation.
 
 - [Trees](Trees): This folder contains implementations of tree data structures in Python. It includes:
+
   - [binarySearchTree.py](Trees/binarySearchTree.py): A script demonstrating a binary search tree implementation.
+
+- [Graphs](Graphs): This folder contains implementations of graph data structures in Python. It includes:
+  - [undirectedGraph.py](Graphs/undirectedGraph.py): A script demonstrating an undirected graph implementation.
 
 ## Usage
 
