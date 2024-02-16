@@ -1,40 +1,46 @@
-# Python Data Structures
+# Data Structures and Algorithms
 
-This repository contains implementations of various data structures and algorithms in Python.
+This repository contains implementations of various data structures and algorithms.
 
-## Structure
+## Contents
 
-The repository is divided into several folders, each focusing on a specific topic:
+- [Algorithms](Algorithms/)
 
-- [LinkedList](LinkedList/linkedList.py): This folder contains an implementation of a singly linked list in Python.
+  - [Recursion](Algorithms/Recursion/)
+    - [Factorial](Algorithms/Recursion/factorial.py)
+    - [Fibonacci](Algorithms/Recursion/fibonacci.py)
+  - [Searching](Algorithms/Searching/)
+  - [Sorting](Algorithms/Sorting/)
 
-- [DoublyLinkedList](LinkedList/doubleyLinkedList.py): This folder contains an implementation of a doubly linked list in Python.
+- [Arrays and Strings](ArraysAndStrings/)
 
-- [ArraysAndStrings](ArraysAndStrings): This folder contains Python scripts demonstrating operations on arrays and strings. It includes:
+  - [Merge Sorted Arrays](ArraysAndStrings/mergeSortedArrays.py)
+  - [Reverse String](ArraysAndStrings/reverseString.py)
 
-  - [mergeSortedArrays.py](ArraysAndStrings/mergeSortedArrays.py): A script to merge two sorted arrays.
-  - [reverseString.py](ArraysAndStrings/reverseString.py): A script to reverse a string.
+- [Graphs](Graphs/)
 
-- [HashTable](HashTable/hashTable.py): This folder contains an implementation of a hash table in Python.
+  - [Undirected Graph](Graphs/undirectedGraph.py)
 
-- [StacksAndQueues](StacksAndQueues): This folder contains implementations of stacks and queues in Python. It includes:
+- [Hash Table](HashTable/)
 
-  - [linkedStack.py](StacksAndQueues/linkedStack.py): A script demonstrating a stack implementation using a linked list.
-  - [listStack.py](StacksAndQueues/listStack.py): A script demonstrating a stack implementation using a Python list.
-  - [queue.py](StacksAndQueues/queue.py): A script demonstrating a queue implementation.
+  - [Hash Table](HashTable/hashTable.py)
 
-- [Trees](Trees): This folder contains implementations of tree data structures in Python. It includes:
+- [Linked List](LinkedList/)
 
-  - [binarySearchTree.py](Trees/binarySearchTree.py): A script demonstrating a binary search tree implementation.
+  - [Doubly Linked List](LinkedList/doubleyLinkedList.py)
+  - [Linked List](LinkedList/linkedList.py)
 
-- [Graphs](Graphs): This folder contains implementations of graph data structures in Python. It includes:
-  - [undirectedGraph.py](Graphs/undirectedGraph.py): A script demonstrating an undirected graph implementation.
+- [Stacks and Queues](StacksAndQueues/)
+  - [Linked Stack](StacksAndQueues/linkedStack.py)
+  - [List Stack](StacksAndQueues/listStack.py)
+  - [Queue](StacksAndQueues/queue.py)
+- [Trees](Trees/)
+  - [Binary Search Tree](Trees/binarySearchTree.py)
 
 ## Usage
 
-To run any script, navigate to its directory and run the Python file. For example:
+Each file in this repository is a standalone Python script. You can run a script with the Python interpreter, like so:
 
-```bash
-cd LinkedList
-python linkedList.py
+```sh
+python3 <script-name>.py
 ```
