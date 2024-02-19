@@ -14,5 +14,5 @@ def fibonacciRecursive(n): # O(2^n)
         return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2)
      
 
-print(fibonacciIterative(8))
 print(fibonacciRecursive(8))
+print(fibonacciIterative(8))
