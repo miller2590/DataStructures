@@ -12,8 +12,8 @@ def bubbleSort(nums: list[int]) -> list[int]: # O(n^2)
                 nums[i], nums[i + 1] = nums[i + 1], nums[i]
                 flag = True
     # Print the sorted list
-    print(nums)
+    return nums
 
 # Call the bubbleSort function with the numbers list
-bubbleSort(numbers)
+print(bubbleSort(numbers))
 
